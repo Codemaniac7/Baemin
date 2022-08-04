@@ -1,0 +1,425 @@
+body {
+    background-color: rgb(42, 193, 188);
+}
+
+.inner {
+    width: 1020px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    top: 8%;
+    z-index: 2000;
+}
+
+.navBar {
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-right: 150px;
+}
+
+.navBar .logo img {
+    width: 145px;
+}
+
+.util-box {
+    display: flex;
+}
+
+
+.navBar .util-box>button>img {
+    width: 142px;
+    margin-right: 42px;
+    display: none;
+    transition: opacity 2000ms;
+}
+
+.header .snsList {
+    display: flex;
+    align-items: center;
+}
+
+.header .snsList li {
+    width: 50px;
+}
+
+.navBar .util-box button {
+    border: none;
+    background: none;
+}
+
+.main .scrollNotice {
+    position: fixed;
+    bottom: 20px;
+    left: 48%;
+    z-index: 5;
+    animation-name: scroll-move;
+    animation-duration: 300ms;
+    animation-direction: alternate;
+    animation-iteration-count: 6;
+}
+
+@keyframes scroll-move{
+    from {
+        bottom: 20px;
+    }
+    to {
+        bottom: 40px;
+    }
+}
+
+.paginationBtn {
+    position: fixed;
+    right: 150px;
+    bottom: 30%; 
+    /* display: none; */
+    z-index: 2;
+}
+
+.paginationBtn img {
+    width: 25px;
+    padding-top: 10px;
+}
+
+.paginationBtn li:first-child {
+    display: none;
+}
+
+.section {
+    height: 100%;
+    width: 100%;
+}
+
+.section-contentsArea {
+    display: flex;
+    position: absolute;
+    width: 950px;
+    height: 88%;
+    bottom:0;
+
+}
+
+
+
+.section-textArea {
+    width: 50%;
+}
+
+.section-textArea p {
+    color: #fff;
+    padding-top: 10px;
+}
+
+.section-textArea img {
+    width: 95%;
+    padding-top: 75px;
+}
+
+.section .imgArea {
+    position: absolute;
+    width: 70%;
+    left: 37%;
+    height: 100%;
+    bottom: 0;
+}
+
+.section .imgArea img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.section1 {
+    background: url(./img/main_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    animation-name: bg-size;
+    animation-duration: 2500ms;
+    height: 100%;
+}
+
+
+@keyframes bg-size {
+    from {
+        background-size: 150%;
+    }
+    to {
+        background-size: 100%;
+    }
+}
+
+.on {
+    opacity: 1;
+}
+
+.off {
+    opacity: 0;
+}
+
+.section1 h1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3000;
+}
+
+.section1 h1 img {
+    width: 175px;
+    transition: opacity 2500ms;
+}
+
+.section1 p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.section1 .downloadArea {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.appstore-downArea p {
+    margin-top: 30px;
+}
+
+.section1 .appstore-downArea>p {
+    padding-bottom: 10px;
+}
+
+.section1 .appstore-downArea button {
+    border-radius: 3rem;
+    border: none;
+    margin-right: 10px;
+}
+
+.section1 .appstore-downArea img {
+    width: 150px;
+    padding: 15px 25px;
+}
+
+.section1 .qrDownloadArea {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+.section1 .qrDownloadArea p {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 62%;
+}
+
+.section1 .qrDownloadArea img {
+    width: 145px;
+}
+
+.section2 .section-textArea p:nth-of-type(2) {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.section2 .imgArea {
+    position: absolute;
+}
+
+.section2 .imgArea img:nth-child(1) {
+    position: absolute;
+    left: 0;
+}
+
+.section2 .imgArea img:nth-child(2) {
+    animation-name: bike;
+    animation-duration: 2000ms;
+    animation-delay: 1000ms;
+    animation-timing-function:cubic-bezier(.46,1.8,1,.9)
+}
+
+.bike {
+    animation-name : bike;
+}
+
+@keyframes bike {
+    from {
+        transform: translate(-100px, -100px)
+    }
+    to {
+        transform: translate(0px, 0px)
+    }
+}
+
+.showUp {
+    animation-name: show-up;
+}
+
+.section3 .imgArea img {
+    animation-delay: 1300ms;
+    animation-duration: 1300ms;
+    animation-timing-function: cubic-bezier(.79,.04,.37,.92);
+}
+
+@keyframes show-up {
+    from {
+        transform: translateY(300px)
+        /* background-color: red; */
+    }
+    to {
+        transform: translateY(0);
+        /* background-color: blue; */
+    }
+}
+
+.section3 p:nth-of-type(2) {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.section4 button {
+    background-color: rgb(42, 193, 188);
+    border: none;
+}
+
+.section4 button img {
+    width: 230px;
+    padding-top: 25px;
+}
+
+.section4 .imgArea img {
+  
+    animation-delay: 1300ms;
+    animation-duration: 1300ms;
+    animation-timing-function: cubic-bezier(.79,.04,.37,.92);
+} 
+
+.section5 .imgArea img {
+    animation-delay: 1500ms;
+    animation-duration: 2000ms;
+    animation-timing-function: cubic-bezier(.79,.04,.37,.92);
+}
+
+
+
+.section6 .imgArea>img {
+    animation-duration: 2000ms;
+    animation-delay: 1200ms;
+    bottom: 200px;
+}
+
+@keyframes to-left {
+    from {
+        right: 0px;
+    }
+    to {
+        right: 200px;
+    }
+}
+
+.toLeft {
+    animation-name: to-left;
+}
+
+.section6 p:nth-of-type(2) {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.section7 .imgArea img {
+    animation-name: show-up;
+    animation-delay: 3500ms;
+    animation-duration: 3500ms;
+    animation-timing-function: cubic-bezier(.79,.04,.37,.92);
+}
+
+.section8 {
+    background: #fff;
+}
+
+
+.footer-left {
+    position: absolute;
+    left: 15%;
+    top: 13%;
+}
+
+.footer-right {
+    position: absolute;
+    right: 27%;
+    top: 12%;
+    height: 300px;
+    width: 300px;
+}
+
+.baeminSns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.baeminLink {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-bottom: 50px;
+    padding-left: 15px;
+}
+
+.baeminLink>li {
+    width: 120px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.baeminLink img {
+    width: 80%;
+
+}
+
+.baeminLink li:nth-child(1) img {
+    width: 110px;
+}
+
+.baeminLink li:nth-child(2) img {
+    width: 130px;
+}
+
+.baeminSns {
+    margin-bottom: 165px;
+    width: 300px;
+}
+
+
+.baeminSns li img {
+    width: 55%;
+}
+
+.baeminInfo p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    padding-left: 15px;
+    /* box-sizing: border-box; */
+}
+
+.baeminInfo span {
+   
+    background: url(https://www.baemin.com/_next/static/images/link-line_01@2x.png) no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+}
+
+.footer-right .text-area img {
+    width: 65%;
+    margin-bottom: 30px;
+}
+
+.footer-right .appDown img{
+    width: 50%;
+    cursor: pointer;
+}
+
