@@ -261,19 +261,21 @@ body {
 }
 
 .section3 .imgArea img {
+    /* margin-top: 500px; */
     animation-delay: 1300ms;
     animation-duration: 1300ms;
     animation-timing-function: cubic-bezier(.79,.04,.37,.92);
+    /* transition: all 7s; */
 }
 
 @keyframes show-up {
     from {
+        opacity: 0;
         transform: translateY(300px)
-        /* background-color: red; */
     }
     to {
+        opacity: 1;
         transform: translateY(0);
-        /* background-color: blue; */
     }
 }
 
